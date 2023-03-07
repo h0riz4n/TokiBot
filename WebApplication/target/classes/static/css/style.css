@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+body {
+  display: flex;
+  overflow: hidden;
+  min-height: 100vh;
+  position: relative;
+  align-items: center;
+  font-family: "Poppins";
+  justify-content: center;
+  background: linear-gradient(to right, #333399, #ff00cc);
+}
+
+.login-card {
+  width: 450px;
+  padding: 4rem;
+  margin: 0rem 1rem;
+  position: relative;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.login-card::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  border-radius: 10px;
+  transform: rotate(-5deg);
+  /*-webkit-transform: rotate(-5deg);*/
+  background: rgba(255, 255, 255, 0.15);
+}
+.login-card::after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  border-radius: 10px;
+  transform: rotate(5deg);
+  /*-webkit-transform: rotate(5deg);*/
+  background: rgba(255, 255, 255, 0.15);
+}
+@media (max-width: 576px) {
+  .login-card {
+    width: 300px;
+    padding: 1rem;
+  }
+}
+@media (max-width: 370px) {
+  .login-card {
+    width: 220px;
+  }
+}
+@media (max-width: 290px) {
+  .login-card {
+    width: 150px;
+  }
+}
+
+.login-card-logo {
+  text-align: center;
+}
+.login-card-logo img {
+  width: 60px;
+  max-width: 100%;
+}
+
+.login-card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.login-card-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.login-card-header h2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.login-card-form {
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card-form .form-item {
+  position: relative;
+}
+
+.login-card-form .form-item .form-item-icon {
+  opacity: 0.4;
+  top: 0.82rem;
+  left: 1.4rem;
+  font-size: 1.3rem;
+  position: absolute;
+}
+
+.login-card-input {
+  width: 370px;
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  border-radius: 100px;
+  transition: background 0.5s;
+  padding-left: 3.5rem;
+  background: rgba(255, 255, 255, 0.3);
+}
+.login-card-input:focus {
+  background: white;
+}
+@media (max-width: 576px) {
+  .login-card-input {
+    width: 220px;
+  }
+}
+@media (max-width: 370px) {
+  .login-card-input {
+    width: 140px;
+  }
+}
+@media (max-width: 290px) {
+  .login-card-input {
+    width: 70px;
+  }
+}
+
+.login-card-button {
+  outline: none;
+  padding: 1rem;
+  color: white;
+  background: black;
+  letter-spacing: 2px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  transition: background 0.5s;
+}
+.login-card-button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+}
+
+.login-card-footer {
+  gap: 1.5rem;
+  opacity: 0.8;
+  display: flex;
+  margin-top: 3rem;
+  text-align: center;
+  letter-spacing: 1px;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}

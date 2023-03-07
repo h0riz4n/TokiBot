@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Food bot</title>
+        <!--Адаптив-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <!--Подключение стилей CSS-->
+        <link rel="stylesheet" th:href="@{css/registered_style.css}">
+        <!--Кодировка страницы-->
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="login-card-container">
+                <div class="login-card">
+                    <div class="login-card-logo">
+                        <img th:src="@{img/logo.png}" alt="logo">
+                    </div>
+                    <div class="login-card-header">
+                        <h1>You are already signed in</h1>
+                    </div>   
+                    <div class="telegram-logo">
+                        <a href="">
+                            <img th:src="@{img/telegram.svg}" alt="telegram">
+                        </a>
+                    </div>    
+                </div>
+                <div class="login-card-footer">
+                    <div class="login-card-title">© Toki Bot</div>
+                    <div class="login-card-year">2023</div>
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>

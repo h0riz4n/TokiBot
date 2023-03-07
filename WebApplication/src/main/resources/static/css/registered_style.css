@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+body {
+  display: flex;
+  overflow: hidden;
+  min-height: 100vh;
+  position: relative;
+  align-items: center;
+  font-family: "Poppins";
+  justify-content: center;
+  background: linear-gradient(to right, #333399, #ff00cc);
+}
+
+.login-card {
+  width: 450px;
+  padding: 4rem;
+  position: relative;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.login-card::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  border-radius: 10px;
+  transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  background: rgba(255, 255, 255, 0.15);
+}
+.login-card::after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  border-radius: 10px;
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  background: rgba(255, 255, 255, 0.15);
+}
+@media (max-width: 576px) {
+  .login-card {
+    width: 300px;
+    padding: 1rem;
+  }
+}
+@media (max-width: 370px) {
+  .login-card {
+    width: 220px;
+  }
+}
+@media (max-width: 290px) {
+  .login-card {
+    width: 150px;
+  }
+}
+
+.login-card-logo {
+  text-align: center;
+}
+.login-card-logo img {
+  width: 60px;
+  max-width: 100%;
+}
+
+.login-card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.login-card-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 767px) {
+  .login-card-header h1 {
+    font-size: 1rem;
+  }
+}
+
+.telegram-logo {
+  text-align: center;
+}
+.telegram-logo img {
+  width: 60px;
+  max-width: 100%;
+}
+
+.login-card-footer {
+  gap: 1.5rem;
+  opacity: 0.8;
+  display: flex;
+  margin-top: 3rem;
+  text-align: center;
+  letter-spacing: 1px;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
